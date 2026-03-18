@@ -1,2 +1,2 @@
-# orianamendez
+# Oriana Mendez
 Portafolio profesional 
