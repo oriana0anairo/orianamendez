@@ -4,9 +4,9 @@ export default function About() {
       <h2 className="text-3xl font-semibold mb-6">Sobre mí</h2>
 
       <p className="text-gray-400 leading-relaxed">
-        Soy desarrollador fullstack con experiencia en aplicaciones
-        empresariales, microservicios y frontend moderno. Trabajo con
-        tecnologías como React, Next.js, Spring Boot y AWS.
+        Desarrollador fullstack enfocado en construir soluciones escalables y
+        mantenibles. Experiencia en aplicaciones empresariales, manejo de datos
+        complejos y optimización de flujos en frontend y backend.
       </p>
     </section>
   );

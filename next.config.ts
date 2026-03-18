@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  output: "export",
+  basePath: "/orianamendez",
+  assetPrefix: "/orianamendez/",
 };
 
 export default nextConfig;
