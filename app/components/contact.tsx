@@ -1,20 +1,35 @@
 export default function Contact() {
   return (
-    <section className="py-20 px-6 text-center">
-      <h2 className="text-3xl font-semibold mb-6">Contacto</h2>
+    <section
+      id="contact"
+      className="mx-auto max-w-6xl px-6 pb-24 md:px-12 lg:px-20"
+    >
+      <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-950 to-zinc-900 p-8">
+        <h2 className="mb-4 text-3xl font-semibold text-white">Contacto</h2>
+        <p className="mb-6 text-zinc-400">
+          Puedes encontrarme en mis redes o escribirme directamente.
+        </p>
 
-      <p className="text-gray-400 mb-4">Puedes contactarme por:</p>
-
-      <div className="flex justify-center gap-4">
-        <a href="#" className="text-indigo-400">
-          LinkedIn
-        </a>
-        <a href="#" className="text-indigo-400">
-          GitHub
-        </a>
-        <a href="mailto:tu@email.com" className="text-indigo-400">
-          Email
-        </a>
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="#"
+            className="rounded-full border border-white/15 px-5 py-2 text-sm text-white hover:bg-white/5"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="#"
+            className="rounded-full border border-white/15 px-5 py-2 text-sm text-white hover:bg-white/5"
+          >
+            GitHub
+          </a>
+          <a
+            href="mailto:tuemail@correo.com"
+            className="rounded-full border border-white/15 px-5 py-2 text-sm text-white hover:bg-white/5"
+          >
+            Email
+          </a>
+        </div>
       </div>
     </section>
   );
