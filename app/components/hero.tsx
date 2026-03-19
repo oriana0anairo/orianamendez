@@ -1,9 +1,11 @@
+import { image } from "../utils/images";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/orianamendez/hero-programming.png')" }}
+        style={{ backgroundImage: `url(${image.heroProgramming})` }}
       />
 
       <div className="absolute inset-0 bg-black/65" />
