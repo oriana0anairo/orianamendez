@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero-programming.png')" }}
+        style={{ backgroundImage: "url('/orianamendez/hero-programming.png')" }}
       />
 
       <div className="absolute inset-0 bg-black/65" />
