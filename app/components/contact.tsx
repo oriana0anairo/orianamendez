@@ -12,19 +12,19 @@ export default function Contact() {
 
         <div className="flex flex-wrap gap-4">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/oriana-mendez-prato-9a1682266"
             className="rounded-full border border-white/15 px-5 py-2 text-sm text-white hover:bg-white/5"
           >
             LinkedIn
           </a>
           <a
-            href="#"
+            href="https://github.com/oriana0anairo"
             className="rounded-full border border-white/15 px-5 py-2 text-sm text-white hover:bg-white/5"
           >
             GitHub
           </a>
           <a
-            href="mailto:tuemail@correo.com"
+            href="mailto:orianamendezprato@gmail.com"
             className="rounded-full border border-white/15 px-5 py-2 text-sm text-white hover:bg-white/5"
           >
             Email
