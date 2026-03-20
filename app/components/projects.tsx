@@ -1,19 +1,38 @@
 const projects = [
   {
-    title: "Sistema de Gestión",
-    description:
-      "Aplicación empresarial con filtros avanzados y manejo de datos masivos.",
-    tech: "React, MUI, Spring Boot",
+    title: "Repuestos de carros",
+    description: "Aplicación de practica de maquetacion",
+    tech: ["React", "JavaScript", "Material UI"],
+    github: "https://github.com/oriana0anairo/repuestosdecarros",
   },
   {
-    title: "Dashboard Analytics",
+    title: "CV Generator Api",
+    description: "Generedor de curriculums vitae, con campos basicos. Back-end",
+    tech: ["Prisma", "TypeScript"],
+    github: "https://github.com/oriana0anairo/cv-generator-api",
+  },
+  {
+    title: "CV Generator",
+    description: "Generedor de curriculums vitae, con campos basicos",
+    tech: ["React", "TypeScript"],
+    github: "https://github.com/oriana0anairo/CV-Generator",
+  },
+  {
+    title: "Ascencion",
     description:
-      "Visualización de datos con gráficos y métricas en tiempo real.",
-    tech: "Next.js, Tailwind",
+      "Proyecto universitario colaborativo. Juego de naves espaciales que se enfrentan a oleadas de enemigos",
+    tech: ["Java"],
+    github: "https://github.com/oriana0anairo/Ascencion",
+  },
+  {
+    title: "Calculadora de calorias",
+    description: "Proyecto de practica de Reatct",
+    tech: ["Reatc, Meterial UI, JavaScript"],
+    github: "https://github.com/oriana0anairo/calculadora-de-calorias",
   },
 ];
 
-export default function Projects() {
+const Projects = () => {
   return (
     <section
       id="projects"
@@ -22,30 +41,31 @@ export default function Projects() {
       <h2 className="mb-10 text-3xl font-semibold text-white">Proyectos</h2>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <article className="rounded-3xl border border-white/10 bg-zinc-950 p-6 shadow-[0_0_30px_rgba(168,85,247,0.06)]">
-          <h3 className="mb-3 text-2xl font-semibold text-white">
-            Sistema de Gestión
-          </h3>
-          <p className="mb-4 text-zinc-400">
-            Aplicación empresarial con filtros avanzados, manejo de datos
-            masivos y flujos de operación complejos.
-          </p>
-          <p className="text-sm text-fuchsia-300">React · MUI · Spring Boot</p>
-        </article>
-
-        <article className="rounded-3xl border border-white/10 bg-zinc-950 p-6 shadow-[0_0_30px_rgba(168,85,247,0.06)]">
-          <h3 className="mb-3 text-2xl font-semibold text-white">
-            Dashboard Analytics
-          </h3>
-          <p className="mb-4 text-zinc-400">
-            Visualización de datos con métricas en tiempo real y una interfaz
-            moderna orientada a decisión de negocio.
-          </p>
-          <p className="text-sm text-fuchsia-300">
-            Next.js · Tailwind · Data Visualization
-          </p>
-        </article>
+        {projects.map((project, index) => (
+          <a
+            key={project.title}
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <article
+              className="rounded-3xl border border-white/10 bg-zinc-950 p-6 shadow-[0_0_30px_rgba(168,85,247,0.06)]"
+              key={index}
+            >
+              <h3 className="mb-3 text-2xl font-semibold text-white">
+                {project.title}
+              </h3>
+              <p className="mb-4 text-zinc-400">{project.description}</p>
+              <p className="text-sm text-fuchsia-300">
+                {project.tech.join(" · ")}
+              </p>
+            </article>
+          </a>
+        ))}
       </div>
     </section>
   );
-}
+};
+
+export default Projects;

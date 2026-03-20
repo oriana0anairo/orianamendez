@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
 
           <p className="mb-3 text-xl text-fuchsia-200 md:text-2xl">
-            Fullstack Engineer
+            Computer Engineer
           </p>
 
           <p className="mb-8 max-w-2xl text-base leading-7 text-zinc-300 md:text-lg">
