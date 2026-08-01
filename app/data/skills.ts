@@ -1,19 +1,15 @@
-export type TechLevel = "Avanzado" | "Intermedio";
+import type { SkillGroup } from "./types";
 
-export type TechItem = {
-  name: string;
-  level?: TechLevel;
-};
-
-export type TechGroup = {
-  title: string;
-  items: TechItem[];
-};
-
-export const techStack: TechGroup[] = [
+/**
+ * Stack técnico agrupado por área.
+ *
+ * Para agregar una tecnología basta con añadirla al grupo correspondiente; el
+ * nivel es opcional y solo se declara cuando aporta información.
+ */
+export const skillGroups: SkillGroup[] = [
   {
     title: "Frontend",
-    items: [
+    skills: [
       { name: "React", level: "Avanzado" },
       { name: "TypeScript", level: "Avanzado" },
       { name: "Next.js", level: "Intermedio" },
@@ -23,7 +19,7 @@ export const techStack: TechGroup[] = [
   },
   {
     title: "Backend",
-    items: [
+    skills: [
       { name: "Java", level: "Intermedio" },
       { name: "Spring Boot", level: "Intermedio" },
       { name: "Spring Data JPA" },
@@ -32,12 +28,12 @@ export const techStack: TechGroup[] = [
     ],
   },
   {
-    title: "Base de Datos",
-    items: [{ name: "MySQL" }, { name: "JPA / Hibernate" }],
+    title: "Base de datos",
+    skills: [{ name: "MySQL" }, { name: "JPA / Hibernate" }],
   },
   {
     title: "Herramientas",
-    items: [
+    skills: [
       { name: "Git" },
       { name: "GitHub" },
       { name: "Postman" },

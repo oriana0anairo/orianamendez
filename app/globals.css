@@ -2,10 +2,24 @@
 
 html {
   scroll-behavior: smooth;
+  /* Compensa la altura de la barra de navegación fija al saltar a una sección. */
+  scroll-padding-top: 5rem;
 }
 
 body {
   margin: 0;
   background: #000;
   color: white;
+}
+
+/* Foco visible y consistente para la navegación por teclado. */
+:focus-visible {
+  outline: 2px solid var(--color-fuchsia-400);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
