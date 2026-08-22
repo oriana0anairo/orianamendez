@@ -55,6 +55,7 @@ export type CertificateCategory =
   | "Backend"
   | "Frontend"
   | "Arquitectura"
+  | "Inteligencia Artificial"
   | "Idiomas"
   | "Habilidades complementarias";
 
