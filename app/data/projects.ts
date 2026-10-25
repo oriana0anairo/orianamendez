@@ -8,13 +8,38 @@ import type { Project } from "./types";
  */
 export const projects: Project[] = [
   {
+    slug: "golden-fantasy-web",
+    title: "Golden Fantasy",
+    description:
+      "Tienda de bisutería artesanal: catálogo con filtros por categoría y búsqueda, carrito y panel de administración. El navegador nunca llama al backend directamente, la sesión se resuelve en el servidor con NextAuth.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "NextAuth"],
+    repositoryUrl: "https://github.com/oriana0anairo/golden-fantasy-web",
+    featured: true,
+  },
+  {
+    slug: "golden-fantasy-api",
+    title: "Golden Fantasy API",
+    description:
+      "Backend de la tienda: dueño del modelo de datos y la lógica de negocio. Autenticación con JWT y roles, catálogo, órdenes y cobro con Mercado Pago, con verificación de firma en el webhook de confirmación.",
+    tech: [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "Zod",
+    ],
+    repositoryUrl: "https://github.com/oriana0anairo/golden-fantasy-api",
+    featured: true,
+  },
+  {
     slug: "cv-generator",
     title: "CV Generator",
     description:
       "Generador de currículums vitae con campos básicos. Interfaz construida con React y TypeScript, consume la API propia del proyecto.",
     tech: ["React", "TypeScript"],
     repositoryUrl: "https://github.com/oriana0anairo/CV-Generator",
-    featured: true,
   },
   {
     slug: "cv-generator-api",
@@ -23,7 +48,6 @@ export const projects: Project[] = [
       "Backend del generador de currículums: modelado de datos con Prisma y exposición de una API REST en TypeScript.",
     tech: ["TypeScript", "Prisma", "REST API"],
     repositoryUrl: "https://github.com/oriana0anairo/cv-generator-api",
-    featured: true,
   },
   {
     slug: "ascencion",
