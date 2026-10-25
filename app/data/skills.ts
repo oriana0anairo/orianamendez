@@ -25,11 +25,18 @@ export const skillGroups: SkillGroup[] = [
       { name: "Spring Data JPA" },
       { name: "Spring Security" },
       { name: "REST APIs" },
+      { name: "Node.js", level: "Básico" },
+      { name: "Express", level: "Básico" },
     ],
   },
   {
     title: "Base de datos",
-    skills: [{ name: "MySQL" }, { name: "JPA / Hibernate" }],
+    skills: [
+      { name: "MySQL" },
+      { name: "PostgreSQL", level: "Básico" },
+      { name: "JPA / Hibernate" },
+      { name: "Prisma", level: "Básico" },
+    ],
   },
   {
     title: "Herramientas",

@@ -2,11 +2,14 @@ import type { ReactNode } from "react";
 
 import { cn } from "@/app/lib/cn";
 
-export type TagVariant = "neutral" | "accent" | "success";
+export type TagVariant = "neutral" | "muted" | "accent" | "success";
 export type TagSize = "sm" | "md";
 
 const VARIANT_STYLES: Record<TagVariant, string> = {
   neutral: "border-white/10 bg-zinc-900 text-zinc-200",
+  // Para badges anidados dentro de una etiqueta `neutral`, que necesitan
+  // despegarse del fondo sin competir con los colores de acento.
+  muted: "border-white/20 bg-white/10 text-zinc-300",
   accent: "border-fuchsia-400/30 bg-fuchsia-500/10 text-fuchsia-200",
   success: "border-emerald-400/30 bg-emerald-500/10 text-emerald-300",
 };

@@ -8,7 +8,7 @@ import type { SkillLevel } from "@/app/data/types";
 const LEVEL_VARIANT: Record<SkillLevel, TagVariant> = {
   Avanzado: "success",
   Intermedio: "accent",
-  Básico: "neutral",
+  Básico: "muted",
 };
 
 export function Skills() {
