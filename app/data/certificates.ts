@@ -60,6 +60,14 @@ export const certificates: Certificate[] = [
     category: "Backend",
   },
   {
+    slug: "docker-fundamentos",
+    title: "Docker: Fundamentos",
+    issuer: "Platzi",
+    issuedAt: "2026-11-09",
+    image: "/certificates/docker-fundamentos.jpg",
+    category: "DevOps e Infraestructura",
+  },
+  {
     slug: "claude-101",
     title: "Claude 101",
     issuer: "Anthropic",
@@ -114,6 +122,7 @@ const CATEGORY_ORDER: CertificateCategory[] = [
   "Backend",
   "Frontend",
   "Arquitectura",
+  "DevOps e Infraestructura",
   "Inteligencia Artificial",
   "Idiomas",
   "Habilidades complementarias",
