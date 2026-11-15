@@ -84,6 +84,15 @@ export const certificates: Certificate[] = [
     category: "Inteligencia Artificial",
   },
   {
+    slug: "creacion-contenidos-edits",
+    title: "Creación de Contenidos con EDITS",
+    issuer: "Taller Crea y Publica",
+    issuedAt: "2026-11-14",
+    image: "/certificates/creacion-contenidos-edits.jpg",
+    category: "Habilidades complementarias",
+    kind: "asistencia",
+  },
+  {
     slug: "psicologia-consumidor",
     title: "Psicología del Consumidor",
     issuer: "Platzi",

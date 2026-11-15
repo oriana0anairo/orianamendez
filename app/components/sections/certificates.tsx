@@ -6,8 +6,15 @@ import { Section } from "@/app/components/ui/section";
 import { Tag } from "@/app/components/ui/tag";
 import { certificateGroups } from "@/app/data/certificates";
 import { SECTION } from "@/app/data/navigation";
+import type { CertificateKind } from "@/app/data/types";
 import { asset } from "@/app/lib/assets";
 import { formatFullDate } from "@/app/lib/dates";
+
+/** Un taller al que se asistió no se "aprueba": cada tipo lleva su propio verbo. */
+const KIND_LABEL: Record<CertificateKind, string> = {
+  aprobado: "Aprobado el",
+  asistencia: "Realizado el",
+};
 
 export function Certificates() {
   return (
@@ -62,7 +69,8 @@ export function Certificates() {
                       </h4>
 
                       <p className="mt-3 text-sm text-zinc-400">
-                        Aprobado el {formatFullDate(certificate.issuedAt)}
+                        {KIND_LABEL[certificate.kind ?? "aprobado"]}{" "}
+                        {formatFullDate(certificate.issuedAt)}
                       </p>
                     </div>
 

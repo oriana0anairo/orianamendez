@@ -60,6 +60,9 @@ export type CertificateCategory =
   | "Idiomas"
   | "Habilidades complementarias";
 
+/** Qué acredita el documento: un curso aprobado o la asistencia a un taller. */
+export type CertificateKind = "aprobado" | "asistencia";
+
 export type Certificate = {
   slug: string;
   title: string;
@@ -69,6 +72,8 @@ export type Certificate = {
   /** Ruta dentro de `public`, ej: "/certificates/java-spring.jpg". */
   image: string;
   category: CertificateCategory;
+  /** Por omisión, "aprobado": cambia solo el texto que acompaña a la fecha. */
+  kind?: CertificateKind;
   /** URL pública de verificación del certificado, si existe. */
   credentialUrl?: string;
 };

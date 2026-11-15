@@ -101,6 +101,8 @@ automáticamente:
   image: "/certificates/nombre-del-curso.jpg",
   category: "Backend",              // ver CertificateCategory en types.ts
   credentialUrl: "https://...",     // opcional: enlace de verificación
+  kind: "asistencia",               // opcional: para talleres a los que se asistió
+                                    // en vez de cursos aprobados (por omisión, "aprobado")
 }
 ```
 
